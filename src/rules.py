@@ -15,4 +15,5 @@ def compute_room_price(
     stay_duration,
 ):
     
-    return
+    if guest_age < 0:
+        raise ValueError("Invalid age: Age cannot be negative.")
